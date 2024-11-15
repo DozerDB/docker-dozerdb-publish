@@ -23,10 +23,10 @@ docker buildx build \
   --build-arg CACHEBUST=$(date +%s) \
   --no-cache \
   --platform linux/amd64,linux/arm64,linux/arm64/v8 \
-  --tag "graphstack/dozerdb:5.24.2.1-alpha.1" \
+  --tag "graphstack/dozerdb:5.25.1.0-alpha.1" \
   --tag "graphstack/dozerdb:latest" \
-  --tag "graphstack/dozerdb:5.24.2" \
-  "5.24.2/bullseye/dozerdb" \
+  --tag "graphstack/dozerdb:5.25.1" \
+  "5.25.1/bullseye/dozerdb" \
   --push
 
 ```
@@ -38,7 +38,7 @@ If you want to build an image with a local distribution, then you may need to mo
 For example copying the file instead of using curl.
 
 ```
-ARG NEO4J_URI=https://dist.dozerdb.org/dozerdb-5.24.2.1-alpha.1-unix.tar.gz
+ARG NEO4J_URI=https://dist.dozerdb.org/dozerdb-5.25.1.1-alpha.1-unix.tar.gz
 
 ...
 
